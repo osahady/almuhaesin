@@ -98,6 +98,13 @@ nav .nav-item.active {
   color: #f3f3f3;
   text-decoration: none;
 }
+#main-footer h1{
+  padding-bottom: 1.5rem;
+}
+
+#main-footer .bg-black{
+  background-color: #222;
+}
 
 .dark-overlay {
   /* position: absolute; */
