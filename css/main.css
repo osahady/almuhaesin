@@ -15,31 +15,46 @@ nav .nav-item.active {
 #showcase .carousel-item {
   height: 100vh; }
 #showcase .carousel-image-1 {
-  background: url("../img/image01.jpeg");
+  background: url("../img/image01.jpeg") center center;
   background-size: cover; }
 #showcase .carousel-image-2 {
-  background: url("../img/image02.jpeg");
+  background: url("../img/image02.jpeg") center center;
   background-size: cover; }
 #showcase .carousel-image-3 {
-  background: url("../img/image03.jpeg");
+  background: url("../img/image03.jpeg") center center;
   background-size: cover; }
 #showcase .carousel-image-4 {
-  background: url("../img/image04.jpeg");
+  background: url("../img/image04.jpeg") center center;
   background-size: cover; }
 #showcase .carousel-image-5 {
-  background: url("../img/image05.jpeg");
+  background: url("../img/image05.jpeg") center center;
   background-size: cover; }
 #showcase .carousel-image-6 {
-  background: url("../img/image06.jpeg");
+  background: url("../img/image06.jpeg") center center;
   background-size: cover; }
+ 
+@media (min-width: 769px) {
   #showcase .vh25{
-    margin-bottom: 20vh !important;
-    text-align: center !important;
+  margin-bottom: 25vh !important;
+  text-align: center !important;
   }
-   .line-space{
-    margin-top: 1rem;
-    line-height: 2.3rem;
+}
+@media (max-width: 768px) {
+  #showcase .vh25{
+  margin-bottom: 30vh !important;
+  text-align: center !important;
   }
+}
+@media (max-width: 360px) {
+  #showcase .vh25{
+  margin-bottom: 20vh !important;
+  text-align: center !important;
+  }
+}
+.line-space{
+  margin-top: 1rem;
+  line-height: 2.3rem;
+}
 .blue{
   color: #26abe3;
 }
@@ -51,7 +66,7 @@ nav .nav-item.active {
 #home-heading {
   position: relative;
   /* min-height: 350px; */
-  background: url("../img/lights.jpeg") fixed no-repeat;
+  background: url("../img/lights.jpeg") center center fixed no-repeat;
   background-size: cover;
   text-align: center;
   color: #fff; }
