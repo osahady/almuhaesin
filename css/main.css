@@ -13,19 +13,6 @@ nav .nav-item.active {
   border-left: #444 3px solid; }
 
 
-  @media (min-width: 769px) {
-    #showcase .carousel-item {
-      height: 100vh; }
-  }
-  @media (max-width: 768px) {
-    #showcase .carousel-item {
-      height: 100vh; }
-  }
-  @media (max-width: 375px) {
-    #showcase .carousel-item {
-      height: 70vh; }
-  }
-
 #showcase .carousel-image-1 {
   background: url("../img/image01.jpeg") center center;
   background-size: cover; }
@@ -45,27 +32,6 @@ nav .nav-item.active {
   background: url("../img/image06.jpeg") center center;
   background-size: cover; }
  
-@media (min-width: 769px) {
-  #showcase .vh25{
-  margin-bottom: 25vh !important;
-  text-align: center !important;
-  }
-}
-@media (max-width: 768px) {
-  #showcase .vh25{
-  margin-bottom: 30vh !important;
-  text-align: center !important;
-  }
-}
-@media (max-width: 375px) {
-  #showcase .vh25{
-  margin-bottom: 13vh !important;
-  text-align: center !important;
-  }
-  #showcase .vh25 .text-mobile{
-    font-size: 1rem;
-  }
-}
 .line-space{
   margin-top: 1rem;
   line-height: 2.3rem;
@@ -145,17 +111,66 @@ nav .nav-item.active {
   
 }
 
-@media (min-width: 375px) {
-  .dark-overlay {
-    background: rgba(0, 0, 0, 0.7); 
+/* ---------- Media Breakpoints -----------*/
+
+/* Tab And Upper */
+@media (min-width: 769px) {
+  #showcase .carousel-item {
+    height: 100vh; 
   }
-}@media (max-width: 375px) {
+  
+#showcase .vh25{
+  margin-bottom: 25vh !important;
+  text-align: center !important;
+  }
+}
+
+/* Mobile And Upper */
+@media (min-width: 376px) {
   .dark-overlay {
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
 
+/* Tab And Lower */
 @media (max-width: 768px) {
   #home-icons .col-md-4 {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; 
+  } 
+  
+  #showcase .carousel-item {
+    height: 100vh; 
+  }
+  
+  #showcase .vh25{
+    margin-bottom: 30vh !important;
+    text-align: center !important;
+  }
+}
+
+/* Mobile And Lower */
+@media (max-width: 375px) {
+  .dark-overlay {
+    background: rgba(0, 0, 0, 0.5); 
+  }
+  
+  #showcase .carousel-item {
+    height: 70vh; }
+    
+  #showcase .vh25{
+    margin-bottom: 10vh !important;
+    text-align: center !important;
+    }
+
+  #showcase .vh25 .text-mobile{
+    font-size: 1rem;
+  }
+  
+  .text-mobile-2{
+    font-size: 1.5rem;
+  }
+  .text-mobile-3{
+    font-size: 2rem;
+  }
+}
